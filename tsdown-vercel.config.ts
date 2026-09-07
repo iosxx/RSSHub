@@ -11,5 +11,7 @@ export default defineConfig({
     // copy: [{ from: 'lib/assets', to: 'dist' }],
     deps: {
         onlyBundle: false,
+        alwaysBundle: ['sanitize-html',
+        'htmlparser2'],
     },
 });
